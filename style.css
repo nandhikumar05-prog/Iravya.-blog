@@ -1,33 +1,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tamil:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
-body{
-margin:0;
-font-family:'Cormorant Garamond',serif;
-color:#f6e7d8;
-background:
+body{margin:0;font-family:'Cormorant Garamond',serif;color:#f6e7d8;background:
 radial-gradient(circle at 20% 20%, rgba(120,10,35,.35), transparent 30%),
 radial-gradient(circle at 80% 30%, rgba(90,0,20,.28), transparent 30%),
-linear-gradient(135deg,#050505,#14070d,#230914,#090909);
-min-height:100vh;
-}
-nav{
-display:flex;justify-content:center;gap:28px;padding:18px;
-background:rgba(15,5,8,.82);backdrop-filter:blur(10px);position:sticky;top:0
-}
-nav a{color:#e8c9a0;text-decoration:none;font-size:1.2rem;font-weight:700}
-.hero{text-align:center;padding:120px 20px}
-.hero h1{font-size:5rem;margin:0;text-shadow:0 0 18px rgba(180,40,70,.25)}
+linear-gradient(135deg,#050505,#14070d,#230914,#090909);}
+nav{display:flex;justify-content:space-between;align-items:center;padding:12px 30px;background:rgba(15,5,8,.85);position:sticky;top:0}
+.brand{display:flex;align-items:center;gap:12px;font-size:2rem;font-weight:bold;color:#e8c9a0}
+.brand img{width:52px;height:52px;border-radius:50%}
+.links{display:flex;gap:22px;flex-wrap:wrap}
+.links a{color:#e8c9a0;text-decoration:none;font-size:1.1rem;font-weight:700}
+.hero{text-align:center;padding:110px 20px}
+.hero h1{font-size:5rem;margin:0}
 .hero p{font-size:1.5rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;max-width:1100px;margin:30px auto;padding:0 20px}
-.card{
-background:rgba(35,12,18,.78);
-border:1px solid rgba(160,60,80,.25);
-padding:28px;border-radius:22px;
-box-shadow:0 10px 30px rgba(0,0,0,.45)
-}
-.btn{
-display:inline-block;padding:10px 16px;background:#e8c9a0;color:#111;
-text-decoration:none;border-radius:10px;font-weight:bold
-}
+.card{background:rgba(35,12,18,.78);border:1px solid rgba(160,60,80,.25);padding:28px;border-radius:22px}
+.btn{display:inline-block;padding:10px 16px;background:#e8c9a0;color:#111;text-decoration:none;border-radius:10px;font-weight:bold}
 footer{text-align:center;padding:24px;background:rgba(15,5,8,.85);margin-top:40px}
 .tamil{font-family:'Noto Serif Tamil',serif}
+@media(max-width:800px){nav{flex-direction:column}.hero h1{font-size:3rem}}
